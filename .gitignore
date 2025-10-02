@@ -1,0 +1,8 @@
+lightning_logs/
+/src/tests.ipynb
+/src/tst.py
+/src/eda_tagil.ipynb
+.html
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
