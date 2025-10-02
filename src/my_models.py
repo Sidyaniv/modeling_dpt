@@ -12,7 +12,7 @@ def dpt():
     # config = DPTConfig(backbone_config=backbone_config)
     # model = DPTForDepthEstimation(config=config)
     
-    # model = DPTForDepthEstimation.from_pretrained('/home/apolyubin/shared_data/SatelliteTo3D-Models/dpt/dfc2018')
+    # model = DPTForDepthEstimation.from_pretrained('/home/<USER>/shared_data/SatelliteTo3D-Models/dpt/dfc2018')
     # model = model.train()
     
     model = DPTForDepthEstimation.from_pretrained('intel/dpt-large')

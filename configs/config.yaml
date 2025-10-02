@@ -1,6 +1,6 @@
 project_name: 'modeling dpt'
 experiment_name: 'CustomDPT_vaih_vaih'
-experiment_path: '/home/apolyubin/private_data/logs_folder/dip'
+experiment_path: '/home/<USER>/private_data/logs_folder/dip'
 model_name: 'CustomDPT'
 n_epochs: 30
 accelerator: 'gpu'
@@ -47,14 +47,14 @@ losses:
                   }
 
 data_config:
-  data_path: '/home/apolyubin/private_data/data/{}'
+  data_path: '/home/<USER>/private_data/data/{}'
   data_path_photos_dict: {
-   'tagil': "/home/apolyubin/shared_data/datasets/Tagil_croped/croped_1_m_px_normalized_ann_images/{}",
-   'ekb': "/home/apolyubin/shared_data/datasets/EKB/1m_crops/images/{}"
+   'tagil': "/home/<USER>/shared_data/datasets/Tagil_croped/croped_1_m_px_normalized_ann_images/{}",
+   'ekb': "/home/<USER>/shared_data/datasets/EKB/1m_crops/images/{}"
   }
   data_path_heights_dict: {
-   'tagil': "/home/apolyubin/shared_data/datasets/Tagil_croped/1m_px_crops_heights/{}",
-   'ekb': "/home/apolyubin/shared_data/datasets/EKB/1m_crops/heights/{}"
+   'tagil': "/home/<USER>/shared_data/datasets/Tagil_croped/1m_px_crops_heights/{}",
+   'ekb': "/home/<USER>/shared_data/datasets/EKB/1m_crops/heights/{}"
   }
   dataset_names: ["Vaihingen"]
   crop_size: [384, 384]

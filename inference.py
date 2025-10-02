@@ -147,9 +147,9 @@ def load_and_preprocces_dfc_image(image_path):
     return img
 
 if __name__ == '__main__':
-    img= load_and_preprocces_dfc_image("/home/apolyubin/private_data/data/DFC2018/og_data/RGB/UH_NAD83_272056_3290290.tif")
+    img= load_and_preprocces_dfc_image("/home/<USER>/private_data/data/DFC2018/og_data/RGB/UH_NAD83_272056_3290290.tif")
 
-    model = DPTForDepthEstimation.from_pretrained('/home/apolyubin/private_data/logs_folder/dpt_tagil')
+    model = DPTForDepthEstimation.from_pretrained('/home/<USER>/private_data/logs_folder/dpt_tagil')
 
     merged_img = predict_large_depth_map(img, model, patch_size=384, overlap_size=0.5)
 
@@ -157,5 +157,5 @@ if __name__ == '__main__':
     merged_img,
     ).convert('RGB')
 
-    im.save('/home/apolyubin/private_data/logs_folder/inference_logs/preds.jpg')
+    im.save('/home/<USER>/private_data/logs_folder/inference_logs/preds.jpg')
 

@@ -64,7 +64,7 @@ def plt_figure(  # noqa: WPS213
     if idx is None:
         idx = -1 
     
-    plt.savefig(f'/home/apolyubin/private_data/logs_folder/diploma/custom_dpt/vaih/{dataset_mode}_{idx}.png', bbox_inches='tight', dpi=300)
+    plt.savefig(f'/home/<USER>/private_data/logs_folder/diploma/custom_dpt/vaih/{dataset_mode}_{idx}.png', bbox_inches='tight', dpi=300)
 
     plt.show()
 

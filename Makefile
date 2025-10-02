@@ -3,7 +3,7 @@ install:
 	pip install 'git+https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup'
 
 train:
-	python3 /home/apolyubin/private_data/modeling-dpt/src/train.py -1
+	python3 /home/<USER>/private_data/modeling-dpt/src/train.py -1
 
 train_optuna:
-	python3 /home/apolyubin/private_data/modeling-dpt/src/train_optuna.py -1
+	python3 /home/<USER>/private_data/modeling-dpt/src/train_optuna.py -1
